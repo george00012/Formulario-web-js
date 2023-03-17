@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario object JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="foto-contenido">
+        <h2>Formulario object JS</h2>
+        <div class="foto">
+          <img src="../5 formulario object/img/man-4365597.png" alt="">
+        </div>
+        
+      </div>
+      <div class="contenido">
+        <div class="datosPersonales">
+          <div class="datos-nombre">
+            <input type="text" id="nombre" placeholder="Nombre:"/>
+          </div>
+
+          <div class="datos-apelido">
+            <input type="text" id="apellido" placeholder="Apellido:"/>
+          </div>
+        </div>
+
+        <div class="contenido-acceso">
+          <div class="acceso">
+            <input type="email" name="correo" id="correo" placeholder="Correo electronico:"/>
+  
+            <label for="contraseña"> </label>
+            <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña:"/>
+          </div>
+        </div>
+
+        <div class="contenido-localizacion">
+          <div class="localizacion">
+            <select name="pais" id="pais">
+              <option value="pais">Seleccione un país:</option></option>
+              <option value="Alemania">Alemania</option>
+              <option value="Rumania">Rumania</option>
+              <option value="argentina">Argentina</option>
+              <option value="brasil">Brasil</option>
+              <option value="chile">Chile</option>
+              <option value="colombia">Colombia</option>
+              <option value="mexico">México</option>
+              <option value="peru">Perú</option>
+              <option value="españa">España</option>
+              <option value="eeuu">Estados Unidos</option>
+            </select>
+  
+            <input type="text" id="empresa" placeholder="Empresa:"/>
+
+            <input type="text" id="ocupacion" placeholder="Ocupacion:"/>
+          </div>
+        </div>
+
+        <div class="contenido-personales">
+          <div class="personales">
+            <select name="genero" id="genero">
+              <option value="genero">Genero:</option>
+              <option value="male">Hombre</option>
+              <option value="women">Mujer</option>
+            </select>
+  
+            <input type="number" id="edad" placeholder="Edad:"/>
+
+            <input type="number" id="telefono" placeholder="Telefono:"/>
+            <div class="info-numero"></div>
+          </div>
+        </div>
+
+      <!--<input type="submit" class="btn" value="Enviar Formulario" onclick="enviar()">-->  
+         <button id="btn"><img class="checkbox" src="../5 formulario object/img/check_box.png" alt=""> Enviar Formulario</button>
+
+      <div class="privacidad">
+          <p class="info red green"></p>
+          <h3>Politica privacidad: <span class="leer" onclick="leerMas()">leer mas</span></h3>
+          <p class="privacidad-parrafo">
+            En la tienda en línea XYZ, nos comprometemos a proteger la
+            privacidad de nuestros clientes usted acepta los términos y condiciones
+            de esta política.
+          </p>
+        </div> 
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
